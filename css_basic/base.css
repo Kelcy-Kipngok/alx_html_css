@@ -1,1 +1,34 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+header, footer {
+  background-color: #f2f2f2;
+  padding: 10px;
+  text-align: center;
+}
+header ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.logo {
+  font-size: 2rem;
+  margin-right: 10px;
+}
+
+article, aside {
+  padding: 20px;
+  height: 300px;
+  overflow-y: auto;
+  border: 1px solid #ccc;
+}
 
