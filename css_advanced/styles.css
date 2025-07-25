@@ -1,0 +1,286 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  color: #fff;
+  background-color: #121629;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* ========== NAVBAR ========== */
+.header {
+ background: linear-gradient(180deg, rgba(0,0,0,0.7) 0%, rgba(18,22,41,1) 80%), url('images/Object.png') center/cover no-repeat;
+      padding: 30px 5%;
+      text-align: center;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+.nav-links a {
+  font-weight: bold;
+  color: white;
+}
+
+.logo {
+  width: 120px;
+}
+
+/* ========== HERO SECTION ========== */
+.hero {
+  margin-top: 50px;
+}
+
+.hero h1 {
+  font-size: 48px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.hero-tags span {
+  margin: 0 10px;
+  font-weight: 600;
+  color: #aaa;
+}
+
+.cta-button {
+  margin-top: 20px;
+  padding: 12px 28px;
+  background: #c271ff;
+  border: none;
+  border-radius: 30px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.cta-button:hover {
+  background: #a85bdb;
+}
+
+/* ========== PROS SECTION ========== */
+.pros {
+  padding: 60px 5%;
+  background: transparent;
+  color: white;
+  text-align: center;
+}
+
+.highlight {
+  color: #c271ff;
+}
+
+.pros-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.pro img {
+  width: 100px;
+  border-radius: 50%;
+  margin: 0 auto 15px;
+}
+
+/* ========== TESTIMONIAL SECTION ========== */
+.testimonial {
+      background: #c271ff;
+      text-align: center;
+      padding: 60px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 40px;
+    }
+    .testimonial img {
+      border-radius: 50%;
+      width: 100px;
+      height: 100px;
+    }
+    .testimonial blockquote {
+      max-width: 700px;
+      font-size: 20px;
+      color: white;
+      font-style: italic;
+    }
+    .testimonial h3, .testimonial p {
+      margin: 15px 0;
+      color: white;
+    }
+.rating-row {
+  display: flex;
+  align-items: center;
+  gap: 100px;
+  margin: 10px 0;
+}
+
+.rating-row .duration {
+  margin: 0;
+}
+/* ========== TUTORIALS SECTION ========== */
+.tutorials {
+  background: #fff;
+  color: #121629;
+  padding: 60px 5%;
+  text-align: center;
+}
+
+
+.tutorials-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.tutorial-card {
+  background: #f9f9f9;
+  padding: 15px;
+  border-radius: 10px;
+  text-align: left;
+  color: #000;
+}
+
+.tutorial-card img {
+  border-radius: 10px;
+}
+
+.instructor {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.instructor img {
+  width: 30px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.rating {
+  color: #ffc107;
+  margin: 10px 0;
+}
+
+.duration {
+  color: #666;
+  font-size: 14px;
+}
+
+/* ========== MEMBERSHIP SECTION ========== */
+.membership {
+  background-color: #071629;
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.membership h2 {
+  font-size: 28px;
+  color: white;
+}
+
+.highlight {
+  color: white;
+}
+
+.membership-options {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+  margin: 40px 0;
+}
+
+.option img {
+  display: block;
+  margin: 0 auto 10px;
+}
+
+.option h3,
+.option p {
+  color: white;
+  margin: 10px 0;
+}
+
+
+/* ========== FAQ SECTION ========== */
+.faq {
+  background: white;
+  color: #121629;
+  padding: 60px 5%;
+  text-align: center;
+}
+
+.faq-grid {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+  text-align: left;
+  gap: 40px;
+}
+
+.faq-column {
+  flex: 1;
+}
+
+.faq-column h3 {
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+.faq-column p {
+  margin-bottom: 30px;
+  font-size: 15px;
+  color: #333;
+}
+
+/* ========== FOOTER SECTION ========== */
+.footer {
+  background: #071629;
+  padding: 40px 5%;
+  text-align: center;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.social-icons i {
+  margin: 0 10px;
+  font-size: 20px;
+  color: #fff;
+}
+
+.footer p {
+  margin-top: 20px;
+  color: #666;
+  font-size: 14px;
+}
