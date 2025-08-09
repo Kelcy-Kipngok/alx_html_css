@@ -1,12 +1,11 @@
-// results.js
+// Get elements
+const hamburger = document.getElementById('hamburger');
+const navMenu = document.getElementById('nav-menu');
 
-// Example data — could be fetched from an API
-const resultsData = [75, 88, 92, 66];
+// Toggle menu on click
+hamburger.addEventListener('click', () => {
+  navMenu.classList.toggle('show');
 
-// Select all pentagons
-const pentagons = document.querySelectorAll('.pentagon');
-
-// Fill each pentagon with its corresponding value
-pentagons.forEach((pentagon, index) => {
-  pentagon.textContent = `${resultsData[index]}%`;
+  // Animate hamburger into X
+  hamburger.classList.toggle('active');
 });
