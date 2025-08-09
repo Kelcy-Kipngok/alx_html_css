@@ -1,0 +1,21 @@
+.results {
+  text-align: center;
+  padding: 50px 0;
+  background: #111;
+  color: white;
+}
+
+.pentagon-container {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+.pentagon {
+  width: 100px;
+  height: 100px;
+  background: #ff5a5f;
+  clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
+}

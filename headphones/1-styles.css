@@ -1,0 +1,59 @@
+/* Import base styles from Task 0 */
+@import url('0-styles.css');
+
+/* What we do Section */
+.what-we-do {
+  background-color: #ffffff;
+  color: #000000;
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.what-we-do h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.section-description {
+  max-width: 800px;
+  margin: 0 auto 60px;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.icons-row {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.icon-box {
+  flex: 1 1 200px;
+  max-width: 220px;
+}
+
+.icon-box span {
+  display: inline-block;
+  font-size: 4rem;
+  color: var(--primary-color);
+  margin-bottom: 20px;
+}
+
+.icon-box h3 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.icon-box p {
+  font-size: 0.9rem;
+  color: #555;
+}
+
+/* Responsive */
+@media screen and (max-width: 480px) {
+  .icons-row {
+    flex-direction: column;
+    align-items: center;
+  }
+}

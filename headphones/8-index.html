@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Company Portfolio</title>
+  <style>
+    /* General Styles */
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      line-height: 1.5;
+      color: #333;
+    }
+    h1, h2, h3 {
+      margin: 0 0 10px;
+    }
+    section {
+      padding: 50px 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    /* Header */
+    header {
+      background: #222;
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 20px;
+    }
+    header .logo {
+      font-size: 1.5em;
+      font-weight: bold;
+    }
+    nav {
+      display: flex;
+      gap: 20px;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    /* Hamburger Menu */
+    .hamburger {
+      display: none;
+      flex-direction: column;
+      cursor: pointer;
+    }
+    .hamburger div {
+      width: 25px;
+      height: 3px;
+      background: white;
+      margin: 4px 0;
+    }
+    @media (max-width: 768px) {
+      nav {
+        display: none;
+        flex-direction: column;
+        background: #333;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        width: 200px;
+        padding: 10px;
+      }
+      nav.active {
+        display: flex;
+      }
+      .hamburger {
+        display: flex;
+      }
+    }
+
+    /* Sections */
+    .results {
+      display: flex;
+      gap: 20px;
+      justify-content: space-around;
+      flex-wrap: wrap;
+    }
+    .result-box {
+      background: #f5f5f5;
+      padding: 20px;
+      border-radius: 8px;
+      text-align: center;
+      flex: 1;
+      min-width: 200px;
+    }
+
+    /* Footer */
+    footer {
+      background: #222;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+<!-- README section (as intro) -->
+<section id="readme">
+  <h1>Welcome to Our Company</h1>
+  <p>We are committed to delivering exceptional solutions that transform businesses and empower communities. This website outlines who we are, what we do, our proven results, and how you can get in touch with us.</p>
+</section>
+
+<!-- Header -->
+<header>
+  <div class="logo">OurCompany</div>
+  <nav id="navMenu">
+    <a href="#readme">Home</a>
+    <a href="#what-we-do">What We Do</a>
+    <a href="#results">Our Results</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  <div class="hamburger" id="hamburger">
+    <div></div>
+    <div></div>
+    <div></div>
+  </div>
+</header>
+
+<!-- What We Do -->
+<section id="what-we-do">
+  <h2>What We Do</h2>
+  <p>We provide innovative services in technology, consulting, and strategy implementation to help clients achieve measurable results. Our expertise spans across industries, ensuring tailored solutions for every challenge.</p>
+</section>
+
+<!-- Our Results -->
+<section id="results">
+  <h2>Our Results</h2>
+  <div class="results">
+    <div class="result-box">
+      <h3>500+</h3>
+      <p>Projects Completed</p>
+    </div>
+    <div class="result-box">
+      <h3>300+</h3>
+      <p>Satisfied Clients</p>
+    </div>
+    <div class="result-box">
+      <h3>95%</h3>
+      <p>Client Retention Rate</p>
+    </div>
+  </div>
+</section>
+
+<!-- Contact Us -->
+<section id="contact">
+  <h2>Contact Us</h2>
+  <p>If you’d like to work with us or learn more about our services, reach out today.</p>
+  <form>
+    <label for="name">Name:</label><br>
+    <input type="text" id="name" name="name" required><br><br>
+    <label for="email">Email:</label><br>
+    <input type="email" id="email" name="email" required><br><br>
+    <label for="message">Message:</label><br>
+    <textarea id="message" name="message" rows="5" required></textarea><br><br>
+    <button type="submit">Send Message</button>
+  </form>
+</section>
+
+<!-- Footer -->
+<footer>
+  <p>&copy; 2025 OurCompany. All Rights Reserved.</p>
+</footer>
+
+<!-- JavaScript for Hamburger Menu -->
+<script>
+  const hamburger = document.getElementById('hamburger');
+  const navMenu = document.getElementById('navMenu');
+
+  hamburger.addEventListener('click', () => {
+    navMenu.classList.toggle('active');
+  });
+</script>
+
+</body>
+</html>
